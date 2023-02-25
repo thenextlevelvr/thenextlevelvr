@@ -12,12 +12,6 @@ var horror = document.getElementsByClassName('horror');
 
 var buttonClicks = 0;
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/service-worker.js');
-    });
-}
-
 // combine these two so that they get do like, kids + multiplayer
 
 function showPlayers(players) {
