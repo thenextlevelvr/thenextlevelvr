@@ -79,7 +79,7 @@ header {
 		justify-content: center;
 	}
 		#dropbutton {
-			background: transparent;
+			background: rgb(22, 22, 22);
 			width: 100%;
 			outline: solid 1px rgb(16, 223, 211);
 			font-family: 'Fjalla One';
