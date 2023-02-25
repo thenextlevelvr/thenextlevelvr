@@ -92,7 +92,7 @@ header {
 footer {
 	height: 5%;
 	width: calc(100vw - 100px);
-	display: none;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Fjalla One';
