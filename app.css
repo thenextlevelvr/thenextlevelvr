@@ -99,7 +99,7 @@ footer {
 	color: #fff;
 	font-size: 1em;
 	padding: 10px;
-	position: relative;
+	position: fixed;
 	margin-bottom: 0;
 	background: rgba(22, 22, 22, 0.5);
 }
