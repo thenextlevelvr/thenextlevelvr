@@ -14,7 +14,7 @@
 			"sizes": "512x512"
 		}
 	]
-	"start_url": "https://thenextlevelvr.github.io/thenextlevelvr/",
+	"start_url": "/thenextlevelvr/",
 	"scope": "/thenextlevelvr/",
 	"display": "fullscreen",
 	"background-color": "black",

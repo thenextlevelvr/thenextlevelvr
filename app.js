@@ -12,11 +12,17 @@ var horror = document.getElementsByClassName('horror');
 
 var buttonClicks = 0;
 
-function btnChrome_onclick() {
-  document.documentElement.webkitRequestFullScreen();
-}
-
 // combine these two so that they get do like, kids + multiplayer
+
+function goFullscreen() {
+	var body = document.getElementById('body');
+	if(body.requestFullScreen)
+		body.requestFullScreen();
+	else if(body.webkitRequestFullscreen)
+		body.webkitRequestFullscreen();
+	else if(body.msRequestFullscreen)
+		body.msRequestFullscreen();
+}
 
 function showPlayers(players) {
 	if(players == 0) {

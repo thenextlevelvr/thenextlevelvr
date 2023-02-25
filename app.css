@@ -67,10 +67,12 @@ header {
 		outline: 2px solid rgb(16, 223, 211);
 		font-size: 1.5em;
 		color: #fff;
+		border: none;
 	}
-		.button:hover, .dropbutton:hover {
+		.button:hover, #dropbutton:hover {
 			color: #f59120;
 			outline: 2px solid #f59120;
+			border: none;
 		}
 	.dropcontainer {
 		width: calc(100vw - 100px);
@@ -82,25 +84,26 @@ header {
 		#dropbutton {
 			background: rgb(22, 22, 22);
 			width: 100%;
-			outline: solid 1px rgb(16, 223, 211);
+			outline: solid 2px rgb(16, 223, 211);
 			font-family: 'Fjalla One';
 			color: #fff;
 			font-size: 1.5em;
 			height: 2em;
 			margin: 0 auto;
+			border: none;
 		}
 
 footer {
 	height: 5%;
 	width: calc(100vw - 100px);
-	display: none;
-	justify-content: center;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	font-family: 'Fjalla One';
 	color: #fff;
 	font-size: 1em;
 	padding: 10px;
-	position: fixed;
+	position: relative;
 	margin-bottom: 0;
 	background: rgba(22, 22, 22, 0.5);
 }

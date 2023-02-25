@@ -8,7 +8,7 @@
 	<script src="app.js"></script>
 	<link rel="manifest" href="/manifest.json">
 </head>
-<body onload="sortGenre();">
+<body onload="sortGenre(); goFullscreen()" id="body">
 	<header>
 		<button class="button" onclick="showPlayers(0);">Multiplayer</button>
 		<button class="button" onclick="showPlayers(1);">Singleplayer</button>
@@ -342,5 +342,5 @@
 			<p style="font-size: 18px; margin-top: 3px;">MEDIUM</p>
 		</div>
 	</div>
-	<footer>Last Updated February 2023 - M <button class="button" onclick="btnChrome_onclick">Fullscreen</button></footer>
+	<footer>Last Updated February 2023 - M</footer>
 </body>
