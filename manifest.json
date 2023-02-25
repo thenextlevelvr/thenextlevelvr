@@ -15,5 +15,6 @@
 		}
 	]
 	"start_url": "https://thenextlevelvr.github.io/thenextlevelvr/",
-	"display": "fullscreen"
+	"display": "fullscreen",
+	"background-color": "black"
 }
