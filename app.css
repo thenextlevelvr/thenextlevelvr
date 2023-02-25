@@ -1,0 +1,106 @@
+body {
+	width: calc(100vw - 100px);
+	height: fit-content;
+	margin: 0 auto 10px auto;
+	background-color: rgb(22, 22, 22);
+}
+
+.container {
+	width: calc(100vw - 100px);
+	height: 90%;
+	margin: 13% auto 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: space-between;
+}
+
+	.game {
+		min-width: 32%;
+		max-width: 32%;
+		min-height: 25%;
+		max-height: fit-content;
+		margin: 0 auto;
+		overflow: wrap;
+	}
+		.game p {
+			width: fit-content;
+			color: #fff;
+			margin: 10px;
+			padding: 10px;
+			background-color: rgba(0,0,0, 0.7);
+			font-family: 'Fjalla One';
+		}
+
+		.multi, .single {
+			display: auto;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin: 5px;
+		}
+			.multi:hover, .single:hover {
+				outline: 1px solid rgb(16, 223, 211);
+			}
+
+header {
+	width: calc(100vw - 100px);
+	height: 20%;
+	margin: 0 auto 10px auto;
+	display: flex;
+	flex-flow: row wrap;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: space-between;
+	padding: 0 0 10px 0;
+	position: fixed;
+	background: rgb(22, 22, 22);
+	top: 0;
+}
+	.button {
+		width: 30%;
+		height: 43%;
+		margin: 10px 0 5px 0;
+		font-family: 'Fjalla One';
+		background-color: rgb(22, 22, 22);
+		outline: 2px solid rgb(16, 223, 211);
+		font-size: 1.5em;
+		color: #fff;
+	}
+		.button:hover, .dropbutton:hover {
+			color: #f59120;
+			outline: 2px solid #f59120;
+		}
+	.dropcontainer {
+		width: calc(100vw - 100px);
+		height: 25%;
+		display: flex;
+		justify-content: center;
+	}
+		#dropbutton {
+			background: transparent;
+			width: 100%;
+			outline: solid 1px rgb(16, 223, 211);
+			font-family: 'Fjalla One';
+			color: #fff;
+			font-size: 1.5em;
+			height: 2em;
+			margin: 0 auto;
+		}
+
+footer {
+	height: 5%;
+	width: calc(100vw - 100px);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Fjalla One';
+	color: #fff;
+	font-size: 1em;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	background: rgba(22, 22, 22, 0.5);
+}
+	
