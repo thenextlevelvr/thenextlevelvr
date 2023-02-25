@@ -99,8 +99,8 @@ footer {
 	color: #fff;
 	font-size: 1em;
 	padding: 10px;
-	position: absolute;
-	bottom: 0;
+	position: relative;
+	margin-bottom: 0;
 	background: rgba(22, 22, 22, 0.5);
 }
 	
