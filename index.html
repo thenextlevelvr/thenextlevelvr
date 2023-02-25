@@ -6,7 +6,15 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="https://thenextlevelvr.ca/wp-content/themes/NXL/icons/favicon-16x16.png">
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
 	<script src="app.js"></script>
-	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="manifest" href="/thenextlevelvr/manifest.webmanifest">
+	<script>
+		if (navigator.serviceWorker) {
+			navigator.serviceWorker.register (
+			  '/thenextvelvr/sw.js',
+			  { scope: '/thenextlevelvr/' }
+			)
+		}
+	</script>
 </head>
 <body onload="sortGenre(); goFullscreen()" id="body">
 	<header>

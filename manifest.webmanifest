@@ -1,22 +1,27 @@
 {
-	"short_name": "Games",
 	"name": "The Next Level VR Games",
+	"short_name": "Games",
+	"description": "Games List for The Next Level VR",
+	
+	"scope": "/thenextlevelvr/",
+	"start_url": "/thenextlevelvr/",
+	
+	"background-color": "black",
+	"theme_color": "black",
+	
+	"display": "fullscreen",
 	"orientation": "landscape",
+	
 	"icons": [
 		{
-			"src": "/192.png",
+			"src": "/thenextlevelvr/192.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/512.png",
+			"src": "/thenextlevelvr/512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
 	]
-	"start_url": "/thenextlevelvr/",
-	"scope": "/thenextlevelvr/",
-	"display": "fullscreen",
-	"background-color": "black",
-	"description": "Games List for The Next Level VR"
 }
