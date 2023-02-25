@@ -19,8 +19,8 @@ body {
 	.game {
 		min-width: 32%;
 		max-width: 32%;
-		min-height: 25%;
-		max-height: fit-content;
+		min-height: 35%;
+		max-height: 50%;
 		margin: 0 auto;
 		overflow: wrap;
 	}

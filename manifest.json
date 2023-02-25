@@ -1,3 +1,19 @@
-{ 
+{
+	"short_name": "Games",
+	"name": "The Next Level VR Games",
 	"orientation": "landscape",
+	"icons": [
+		{
+			"src": "./192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "./512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+	"start_url": "https://thenextlevelvr.github.io/thenextlevelvr/",
+	"display": "fullscreen"
 }
