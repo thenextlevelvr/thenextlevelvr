@@ -6,8 +6,8 @@
 	"scope": "/thenextlevelvr/",
 	"start_url": "/thenextlevelvr/",
 	
-	"background-color": "black",
-	"theme_color": "black",
+	"background-color": "#161616",
+	"theme_color": "#161616",
 	
 	"display": "fullscreen",
 	"orientation": "landscape",
