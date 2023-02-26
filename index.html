@@ -8,12 +8,8 @@
 	<script src="app.js"></script>
 	<link rel="manifest" href="/thenextlevelvr/manifest.webmanifest">
 	<script>
-		if (navigator.serviceWorker) {
-			navigator.serviceWorker.register (
-			  '/thenextvelvr/sw.js',
-			  { scope: '/thenextlevelvr/' }
-			)
-		}
+		if (typeof navigator.serviceWorker !== 'undefined') {
+		navigator.serviceWorker.register('sw.js') }
 	</script>
 </head>
 <body onload="sortGenre(); goFullscreen()" id="body">
