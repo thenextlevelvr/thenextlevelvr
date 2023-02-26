@@ -5,20 +5,20 @@
 	<link rel="stylesheet" type="text/css" href="app.css" media="screen" />
 	<link rel="icon" type="image/png" sizes="16x16" href="https://thenextlevelvr.ca/wp-content/themes/NXL/icons/favicon-16x16.png">
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
-	<script src="app.js"></script>
-	<link rel="manifest" href="/thenextlevelvr/manifest.webmanifest">
+	<script src="./js/app.js"></script>
+	<link rel="manifest" href="/thenextlevelvr/js/manifest.webmanifest">
 	<script>
 		if (typeof navigator.serviceWorker !== 'undefined') {
 			navigator.serviceWorker.register('sw.js') }
 	</script>
 </head>
-<body onload="sortGenre(); goFullscreen()" id="body">
+<body onload="sortGenre();" id="body">
 	<header>
 		<button class="button" onclick="showPlayers(0);">Multiplayer</button>
 		<button class="button" onclick="showPlayers(1);">Singleplayer</button>
 		<button class="button" onclick="showPlayers(2);">Reset</button>
 		<div class="dropcontainer">
-			<button id="dropbutton" onclick="sortGenre();">Sort By Genre</button>
+			<button id="dropbutton" onclick="sortGenre();">Sort By Genre Instead</button>
 		</div>
 	</header>
 	<div class="container">
@@ -84,7 +84,7 @@
 			<!-- <p style="font-size: 24px">Gorilla Tag</p> -->
 			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
 		</div>
-		<div class="game single experience action" style="background-image: url('https://static.wikia.nocookie.net/starwars/images/d/d1/Trials_on_Tatooine.jpg/revision/latest?cb=20160315184458');">
+		<div class="game single experience action" style="background-image: url('./tatoo.png');">
 			<!-- <p style="font-size: 24px">Trials on Tatooine</p> -->
 			<!-- <p style="font-size: 18px; margin-top: 3px;">EASY</p> -->
 		</div>

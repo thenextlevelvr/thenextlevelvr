@@ -14,12 +14,12 @@
 	
 	"icons": [
 		{
-			"src": "/thenextlevelvr/192.png",
+			"src": "/thenextlevelvr/assets/images/192.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/thenextlevelvr/512.png",
+			"src": "/thenextlevelvr/assets/images/512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}

@@ -1,13 +1,13 @@
 var github-path = '/thenextlevelvr';
 var app-prefix = 'tnlvr';
 
-var version = 'version_04';
+var version = 'version_05';
 
 var urls = [ 
 	`${github-path}/`, 
 	`${github-path}/index.html`, 
 	`${github-path}/app.css`, 
-	`${github-path}/app.js` ]
+	`${github-path}/js/app.js` ]
 	
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 

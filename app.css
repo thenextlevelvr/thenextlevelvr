@@ -17,8 +17,8 @@ body {
 }
 
 	.game {
-		min-width: 32%;
-		max-width: 32%;
+		min-width: 32.5%;
+		max-width: 32.5%;
 		min-height: 250px;
 		margin: 0 auto;
 		overflow: wrap;
@@ -46,7 +46,7 @@ body {
 
 header {
 	width: calc(100vw - 100px);
-	height: 20%;
+	height: 18%;
 	margin: 0 auto 10px auto;
 	display: flex;
 	flex-flow: row wrap;
@@ -59,7 +59,7 @@ header {
 	top: 0;
 }
 	.button {
-		width: 30%;
+		width: 32%;
 		height: 43%;
 		margin: 10px 0 5px 0;
 		font-family: 'Fjalla One';
