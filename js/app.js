@@ -831,19 +831,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'sylvia':
-			game = document.getElementById('sylvia');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'trip':
 			game = document.getElementById('trip');
 			if(module_toggle == false) {
@@ -1314,6 +1301,71 @@ function toggleModule(tag) {
 			break;
 		case 'wizard':
 			game = document.getElementById('wizard');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'cloudgolf':
+			game = document.getElementById('cloudgolf');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'temple':
+			game = document.getElementById('temple');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'rift':
+			game = document.getElementById('rift');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'rotten':
+			game = document.getElementById('rotten');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'rec':
+			game = document.getElementById('rec');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
