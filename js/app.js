@@ -454,19 +454,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'cn':
-			game = document.getElementById('cn');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'pirate':
 			game = document.getElementById('pirate');
 			if(module_toggle == false) {
@@ -482,19 +469,6 @@ function toggleModule(tag) {
 			break;
 		case 'blade':
 			game = document.getElementById('blade');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'wanderer':
-			game = document.getElementById('wanderer');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
@@ -883,19 +857,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'paper':
-			game = document.getElementById('paper');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'cave':
 			game = document.getElementById('cave');
 			if(module_toggle == false) {
@@ -1015,19 +976,6 @@ function toggleModule(tag) {
 			break;
 		case 'car':
 			game = document.getElementById('car');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'brook':
-			game = document.getElementById('brook');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
@@ -1234,19 +1182,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'sprint':
-			game = document.getElementById('sprint');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'basement':
 			game = document.getElementById('basement');
 			if(module_toggle == false) {
@@ -1273,19 +1208,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'comm':
-			game = document.getElementById('comm');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'training':
 			game = document.getElementById('training');
 			if(module_toggle == false) {
@@ -1301,19 +1223,6 @@ function toggleModule(tag) {
 			break;
 		case 'wizard':
 			game = document.getElementById('wizard');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'cloudgolf':
-			game = document.getElementById('cloudgolf');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
