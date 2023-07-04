@@ -1,7 +1,7 @@
 var github-path = '/thenextlevelvr';
 var app-prefix = 'tnlvr';
 
-var version = 'version_15';
+var version = 'version_17';
 
 var urls = [ 
 	`${github-path}/`, 
