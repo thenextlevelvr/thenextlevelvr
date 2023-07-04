@@ -1286,6 +1286,32 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
+		case 'allinone':
+			game = document.getElementById('allinone');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'climb':
+			game = document.getElementById('climb');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
 		case '':
 			alert("uh oh bestie something went wrong");
 			break;
