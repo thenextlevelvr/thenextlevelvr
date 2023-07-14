@@ -255,6 +255,9 @@ function showPlayers(players) {
 		for(var i = 0; i < single.length; i++) {
 			single[i].style.display = "none";
 		}
+		for(var i = 0; i < rooms.length; i++) {
+			rooms[i].style.display = "none";
+		}
 		for(var i = 0; i < multi.length; i++) {
 			multi[i].style.display = "inline-block";
 		}
@@ -263,6 +266,9 @@ function showPlayers(players) {
 		for(var i = 0; i < multi.length; i++) {
 			multi[i].style.display = "none";
 		}
+		for(var i = 0; i < rooms.length; i++) {
+			rooms[i].style.display = "none";
+		}
 		for(var i = 0; i < single.length; i++) {
 			single[i].style.display = "inline-block";
 		}
@@ -270,6 +276,9 @@ function showPlayers(players) {
 	else if(players == 2) {
 		for(var i = 0; i < single.length; i++) {
 			single[i].style.display = "inline-block";
+		}
+		for(var i = 0; i < rooms.length; i++) {
+			rooms[i].style.display = "none";
 		}
 		for(var i = 0; i < multi.length; i++) {
 			multi[i].style.display = "inline-block";
