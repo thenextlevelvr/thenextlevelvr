@@ -9,11 +9,12 @@
 </head>
 <body onload="sortGenre();">
 	<header>
-		<button class="button" onclick="showPlayers(0);">Multiplayer</button>
-		<button class="button" onclick="showPlayers(1);">Singleplayer</button>
-		<button class="button" onclick="showPlayers(2);">Reset</button>
+		<button class="button" onclick="showPlayers(0); sortGenre(reset);">Multiplayer</button>
+		<button class="button" onclick="showPlayers(1); sortGenre(reset);">Singleplayer</button>
+		<button class="button" onclick="showPlayers(2); sortGenre(reset);">Reset</button>
 		<div class="dropcontainer">
 			<button id="dropbutton" onclick="sortGenre();">Sort By Genre Instead</button>
+			<button id="roombutton" onclick="sortEscape(); sortGenre(reset);">Coming August 1st: Escape Rooms</button>
 		</div>
 	</header>
 	<div class="container">
@@ -691,7 +692,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="game multi sport" style="background-image: url('https://cdn.sidequestvr.com/file/112616/38982545_485547189343968_2885129144085879705_njpg.jpg" onclick="toggleModule('allinone');">
+		<div class="game multi sports" style="background-image: url('https://cdn.sidequestvr.com/file/112616/38982545_485547189343968_2885129144085879705_njpg.jpg" onclick="toggleModule('allinone');">
 			<!-- <p style="font-size: 24px">All-in-One Sports</p> -->
 			<p style="font-size: 18px; margin-top: 3px;">1-2 Players</p>
 			<div class="module" id="allinone">
@@ -1015,8 +1016,152 @@
 				</div>
 			</div>
 		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/42/6128827d06d37/Alice%202_0merge_m.jpg'); background-position: top center;" onclick="toggleModule('alice');">
+			<!-- <p style="font-size: 24px">ER: Alice</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="alice">
+				<span class="close cursor" onclick="toggleModule('alice');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/42/60f7ff2146ec4/2.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/42/60f7ff5f97b3e/5.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">Plunge into a world of magic and wonder to uncover the secrets of the Queen of Hearts, who's frozen Wonderland in time! Uncover familiar characters and solve mind-bending puzzles to make your way through the caterpillar's forest, Mad Hatter's tea party, and many more.</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/22/6128921891da9/House%20of%20Fear_m.jpg'); background-position: bottom center;" onclick="toggleModule('fear1');">
+			<!-- <p style="font-size: 24px">House of Fear</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="fear1">
+				<span class="close cursor" onclick="toggleModule('fear1');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/22/61279a77ab967/9m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/22/61279a2891e27/2m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">Night. An abandoned cabin in the woods. Cobwebs in the corners, dust on the floor...and not a single living soul. From the looks of it the house has long since been abandoned, but is that really the case?</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/473/6340481fc05ef/HOF_2_1000x500-min.jpg'); background-position: bottom center;" onclick="toggleModule('fear2');">
+			<!-- <p style="font-size: 24px">House of Fear: Cursed Souls</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="fear2">
+				<span class="close cursor" onclick="toggleModule('fear2');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/473/6385fad7de33f/scr_10_min.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/473/633b119d26f3e/Screenshot4.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">The dead need the living: they need you. A mysterious and brutal murder in a small town shocked the locals: rumor has it that one night occultists killed an entire family and cursed their souls, imprisoning them in the walls forever. Can you solve this the mystery of their deaths and free them from their fate?</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/6/648059e3266af/Prisonnew600x900.jpg'); background-position: top center;" onclick="toggleModule('prison');">
+			<!-- <p style="font-size: 24px">ER: The Prison</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="prison">
+				<span class="close cursor" onclick="toggleModule('prison');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/6/64818e6d3c600/scr3.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/6/64818eb4eb4ed/scr6.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">You've been working our whole life to put away gangs and end corruption in the police force, until it finally caught up with you: you've been thrown in jail to rot, falsely accused by those you sought to bring to justice. You're not alone though, and with the help of your friends, it's finally time to break out.</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/40/6112a6d44ff8e/Chernobyl_Final_merge.jpg');" onclick="toggleModule('cherno');">
+			<!-- <p style="font-size: 24px">ER: Chernobyl</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="cherno">
+				<span class="close cursor" onclick="toggleModule('cherno');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/40/60f815f9a60ab/Screenshot_5.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/40/60f8143176f83/Screenshot_1.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">Is it possible to change fate? What happened on the night of the accident? What happened afterwards? Find answers to questions that have remained unanswered until now. The ghost town of Chernobyl can tell you its story...</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/31/625ad5427c2cc/Jungle_quest_4%2C5%D0%9C%D0%91_4121%E2%80%8A%C3%97%E2%80%8A5828.jpg'); background-position: top center;" onclick="toggleModule('jungle');">
+			<!-- <p style="font-size: 24px">ER: Jungle Quest</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="jungle">
+				<span class="close cursor" onclick="toggleModule('jungle');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/31/61278d5bb7bee/ER_JungleQuest_5m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/31/61278d84e61f7/ER_JungleQuest_8m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">During a walk in the park, you found a portal that leads to the mysterious world. An amazing sanctuary populated by animals appears in front of you. But how do you get back?</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/30/6346b8e031039/Survival1000x1000.jpg'); background-position: bottom center;" onclick="toggleModule('surv');">
+			<!-- <p style="font-size: 24px">ER: Survival</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="surv">
+				<span class="close cursor" onclick="toggleModule('surv');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/30/61278f4db88e1/ER_Survival_8m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/30/61278ee7b5f1b/ER_Survival_1m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">You were planning an unforgettable vacation: you didn't expect it to turn into a fight for survival. Lightning struck the plane and it crashed next to a small uninhabited island in the Pacific Ocean. The cockpit transmitter is malfunctioning and the weather is getting worse: you need a place to hide and a plan to survive.</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/27/60ffc38622b1c/S_cover.png'); background-position: bottom center;" onclick="toggleModule('sig');">
+			<!-- <p style="font-size: 24px">Signal Lost</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="sig">
+				<span class="close cursor" onclick="toggleModule('sig');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/27/6127961c70fce/18m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/27/612794cdd9ec8/1m.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">The connection with the secret research station “Asgard”, orbiting the Earth, was unexpectedly lost five hours ago: now there's just one hour left until it hits earth. You're a part of emergency team that has to restore the operability of the station systems, required to correct the orbit. What is hidden inside the space station that now appears lifeless and where did its crew go?</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/26/644814ab1c9cf/Sanctum2_1000%D1%851000.jpg'); background-position: bottom center;" onclick="toggleModule('sanctum');">
+			<!-- <p style="font-size: 24px">ER: Sanctum</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="sanctum">
+				<span class="close cursor" onclick="toggleModule('sanctum');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/26/644be80b9d65d/ER_Sanctum-5%20%281%29.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/26/644be9fa025dc/ER_Sanctum-13%20%281%29.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">You received a letter from your close friend Anna, a detective conducting an investigation of mysterious disappearances in the nearby forests: now you have no other choice but to drop everything to save her. Follow Anna's trail to an old abandoned monastery, where the cult of an ancient deity settled. You will have to risk not only your life but also your soul when you encounter the mysterious force that slumbers in the dungeon.</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/20/63468afa9f91b/CYBERPUNK_1000x1000.jpg'); background-position: top center;" onclick="toggleModule('punk');">
+			<!-- <p style="font-size: 24px">ER: Cyberpunk</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="punk">
+				<span class="close cursor" onclick="toggleModule('punk');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/20/632b2e2c0ea2d/Scr_1s.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/20/632b2f5f71127/Scr_16s.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">Your group, made up of cyborgs equipped with special skills, is tasked with stealing some rare and valuable data from the archives of an influential corporation. Infiltrating the complex unnoticed, you must get to the archives and download the stack memory: if you have the guts.</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/18/63467fb9dd67e/Christmas_2000x1000.jpg'); background-position: top center;" onclick="toggleModule('christmas');">
+			<!-- <p style="font-size: 24px">ER: Christmas</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="christmas">
+				<span class="close cursor" onclick="toggleModule('christmas');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/18/632b24397f45e/Scr_19S.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/18/632b22ccabe68/Scr_11S.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">Christmas is under threat! Santa's caught in a blizzard, all the presents are missing, and he can't find his way home to the North Pole. Help Santa save Christmas!</div>
+				</div>
+			</div>
+		</div>
+		<div class="game rooms" style="background-image: url('https://vrp.arvilab.com/storage/materials/promo/14/634686282a333/Mission%20Sigma_key%202000%D1%851000.jpg'); background-position: top right;" onclick="toggleModule('sigma');">
+			<!-- <p style="font-size: 24px">ER: Christmas</p> -->
+			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
+			<div class="module" id="sigma">
+				<span class="close cursor" onclick="toggleModule('sigma');">&times;</span>
+				<div class="module-content">
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/14/632b14152fa63/Scr_s6.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide" style="background: url('https://vrp.arvilab.com/storage/materials/promo/14/632b14a57bb82/Scr_s12.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<div class="slide-caption">Secret services have located and neutralized a known terrorist who has been hiding out in a deprived area of the city for the last ten years: this is where the good news ends. It turns out that on the roof of an abandoned high-rise the maniac has installed a nuclear warhead with a timer on it. The building itself has been turned into a tower filled with intricate traps and obstacles. Can you get past all the traps and preempt a nuclear attack?</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<footer>Last Updated February 2023 - M</footer>
+	<footer>Last Updated July 2023 - M</footer>
 	<script>
 		if (typeof navigator.serviceWorker !== 'undefined') {
 			navigator.serviceWorker.register('sw.js') }

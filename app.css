@@ -33,14 +33,17 @@ body {
 			font-family: 'Fjalla One';
 		}
 
-		.multi, .single {
+		.multi, .single, .rooms {
 			display: auto;
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
 			margin: 5px;
 		}
-			.multi:hover, .single:hover {
+			.rooms {
+				display: none;
+			}
+			.multi:hover, .single:hover, .rooms:hover {
 				outline: 1px solid rgb(16, 223, 211);
 			}
 
@@ -69,7 +72,7 @@ header {
 		color: #fff;
 		border: none;
 	}
-		.button:hover, #dropbutton:hover {
+		.button:hover, #dropbutton:hover, #roombutton:hover {
 			color: #f59120;
 			outline: 2px solid #f59120;
 			border: none;
@@ -81,7 +84,7 @@ header {
 		justify-content: center;
 		background: rgb(22, 22, 22);
 	}
-		#dropbutton {
+		#dropbutton, #roombutton {
 			background: rgb(22, 22, 22);
 			width: 100%;
 			outline: solid 2px rgb(16, 223, 211);
@@ -92,6 +95,9 @@ header {
 			margin: 0 auto;
 			border: none;
 		}
+			#roombutton {
+				margin-left: 20px;
+			}
 
 footer {
 	height: 5%;

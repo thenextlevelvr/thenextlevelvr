@@ -9,14 +9,248 @@ var rhythm = document.getElementsByClassName('rhythm');
 var action = document.getElementsByClassName('action');
 var sports = document.getElementsByClassName('sports');
 var horror = document.getElementsByClassName('horror');
+var rooms = document.getElementsByClassName('rooms');
 
 var modules = document.getElementsByClassName('module');
 
 var module_toggle = false;
 
 var buttonClicks = 0;
+var toggle = 0;
+
+function sortGenre(reset) {
+	var button = document.getElementById('dropbutton');
+	
+	if(reset == 0 || reset == "" || reset == null) {
+		switch(buttonClicks) {
+			case 0: // default
+				button.innerHTML = "Sort By Genre Instead";
+				buttonClicks++;
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "inline-block";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "inline-block";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "inline-block";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "inline-block";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "inline-block";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "inline-block";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "inline-block";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "inline-block";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				break;
+			case 1: // shooters
+				button.innerHTML = "Shooters";
+				buttonClicks++;
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "inline-block";
+				break;
+			case 2: // kids
+				button.innerHTML = "For Kids";
+				buttonClicks++;
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "inline-block";
+				break;
+			case 3: // experiences
+				button.innerHTML = "Experiences";
+				buttonClicks++;
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "inline-block";
+				break;
+			case 4: // puzzles
+				button.innerHTML = "Puzzle Games";
+				buttonClicks++;
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "inline-block";
+				break;
+			case 5: // rhythm
+				button.innerHTML = "Musical Games";
+				buttonClicks++;
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "inline-block";
+				break;
+			case 6: // action
+				button.innerHTML = "Action Games";
+				buttonClicks++;
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "inline-block";
+				break;
+			case 7: // sports
+				button.innerHTML = "Sports";
+				buttonClicks++;
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "inline-block";
+				break;
+			case 8: // horror
+				button.innerHTML = "Horror";
+				buttonClicks = 0;
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "inline-block";
+				break;
+		}
+	}
+	else {
+		button.innerHTML = "Sort By Genre Instead";
+		buttonClicks = 1;
+		for(i = 0; i < shooters.length; i++)
+			shooters[i].style.display = "inline-block";
+		for(i = 0; i < kids.length; i++)
+			kids[i].style.display = "inline-block";
+		for(i = 0; i < experiences.length; i++)
+			experiences[i].style.display = "inline-block";
+		for(i = 0; i < puzzles.length; i++)
+			puzzles[i].style.display = "inline-block";
+		for(i = 0; i < rhythm.length; i++)
+			rhythm[i].style.display = "inline-block";
+		for(i = 0; i < action.length; i++)
+			action[i].style.display = "inline-block";
+		for(i = 0; i < sports.length; i++)
+			sports[i].style.display = "inline-block";
+		for(i = 0; i < horror.length; i++)
+			horror[i].style.display = "inline-block";
+		for(i = 0; i < rooms.length; i++)
+			rooms[i].style.display = "none";
+	}
+}
 
 function showPlayers(players) {
+	sortGenre(1);
+	sortEscape();
+	
 	if(players == 0) {
 		for(var i = 0; i < single.length; i++) {
 			single[i].style.display = "none";
@@ -43,13 +277,34 @@ function showPlayers(players) {
 	}
 }
 
-function sortGenre() {
-	var button = document.getElementById('dropbutton');
-
-	switch(buttonClicks) {
-		case 0: // default
-			button.innerHTML = "Sort By Genre Instead";
-			buttonClicks++;
+function sortEscape() {
+	sortGenre(1);
+	var button = document.getElementById('roombutton');
+	
+	switch(toggle) {
+		case 0:
+			toggle = 1;
+			for(i = 0; i < shooters.length; i++)
+				shooters[i].style.display = "none";
+			for(i = 0; i < kids.length; i++)
+				kids[i].style.display = "none";
+			for(i = 0; i < experiences.length; i++)
+				experiences[i].style.display = "none";
+			for(i = 0; i < puzzles.length; i++)
+				puzzles[i].style.display = "none";
+			for(i = 0; i < rhythm.length; i++)
+				rhythm[i].style.display = "none";
+			for(i = 0; i < action.length; i++)
+				action[i].style.display = "none";
+			for(i = 0; i < sports.length; i++)
+				sports[i].style.display = "none";
+			for(i = 0; i < horror.length; i++)
+				horror[i].style.display = "none";
+			for(i = 0; i < rooms.length; i++)
+				rooms[i].style.display = "inline-block";
+			break;
+		case 1:
+			toggle = 0;
 			for(i = 0; i < shooters.length; i++)
 				shooters[i].style.display = "inline-block";
 			for(i = 0; i < kids.length; i++)
@@ -66,169 +321,13 @@ function sortGenre() {
 				sports[i].style.display = "inline-block";
 			for(i = 0; i < horror.length; i++)
 				horror[i].style.display = "inline-block";
-			break;
-		case 1: // shooters
-			button.innerHTML = "Shooters";
-			buttonClicks++;
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "inline-block";
-			break;
-		case 2: // kids
-			button.innerHTML = "For Kids";
-			buttonClicks++;
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "inline-block";
-			break;
-		case 3: // experiences
-			button.innerHTML = "Experiences";
-			buttonClicks++;
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "inline-block";
-			break;
-		case 4: // puzzles
-			button.innerHTML = "Puzzle Games";
-			buttonClicks++;
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "inline-block";
-			break;
-		case 5: // rhythm
-			button.innerHTML = "Musical Games";
-			buttonClicks++;
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "inline-block";
-			break;
-		case 6: // action
-			button.innerHTML = "Action Games";
-			buttonClicks++;
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "inline-block";
-			break;
-		case 7: // sports
-			button.innerHTML = "Sports";
-			buttonClicks++;
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "none";
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "inline-block";
-			break;
-		case 8: // horror
-			button.innerHTML = "Horror";
-			buttonClicks = 0;
-			for(i = 0; i < shooters.length; i++)
-				shooters[i].style.display = "none";
-			for(i = 0; i < kids.length; i++)
-				kids[i].style.display = "none";
-			for(i = 0; i < experiences.length; i++)
-				experiences[i].style.display = "none";
-			for(i = 0; i < puzzles.length; i++)
-				puzzles[i].style.display = "none";
-			for(i = 0; i < rhythm.length; i++)
-				rhythm[i].style.display = "none";
-			for(i = 0; i < action.length; i++)
-				action[i].style.display = "none";
-			for(i = 0; i < sports.length; i++)
-				sports[i].style.display = "none";
-			for(i = 0; i < horror.length; i++)
-				horror[i].style.display = "inline-block";
+			for(i = 0; i < rooms.length; i++)
+				rooms[i].style.display = "none";
 			break;
 	}
 }
+
+
 
 function toggleModule(tag) {
 	var game = "";
@@ -1301,6 +1400,162 @@ function toggleModule(tag) {
 			break;
 		case 'climb':
 			game = document.getElementById('climb');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'alice':
+			game = document.getElementById('alice');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'fear1':
+			game = document.getElementById('fear1');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'fear2':
+			game = document.getElementById('fear2');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'prison':
+			game = document.getElementById('prison');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'cherno':
+			game = document.getElementById('cherno');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'jungle':
+			game = document.getElementById('jungle');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'surv':
+			game = document.getElementById('surv');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'sig':
+			game = document.getElementById('sig');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'sanctum':
+			game = document.getElementById('sanctum');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'punk':
+			game = document.getElementById('punk');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'christmas':
+			game = document.getElementById('christmas');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'sigma':
+			game = document.getElementById('sigma');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
