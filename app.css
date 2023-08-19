@@ -133,14 +133,14 @@ footer {
 		max-width: 90%;
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 		height: 100%;
 	}
 			
 
 .slide {
-	width: 47%;
+	width: 48%;
 	height: 50%;
 	margin: 10px;
 	margin-top: 50px;
