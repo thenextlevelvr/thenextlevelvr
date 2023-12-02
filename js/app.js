@@ -9,13 +9,15 @@ var rhythm = document.getElementsByClassName('rhythm');
 var action = document.getElementsByClassName('action');
 var sports = document.getElementsByClassName('sports');
 var horror = document.getElementsByClassName('horror');
+var fiveplus = document.getElementsByClassName('fiveplus');
+var two = document.getElementsByClassName('two');
 var rooms = document.getElementsByClassName('rooms');
 
 var modules = document.getElementsByClassName('module');
 
 var module_toggle = false;
 
-var buttonClicks = 0;
+var buttonClicks = 1;
 var toggle = 0;
 
 function sortGenre(reset) {
@@ -42,6 +44,10 @@ function sortGenre(reset) {
 					sports[i].style.display = "inline-block";
 				for(i = 0; i < horror.length; i++)
 					horror[i].style.display = "inline-block";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "inline-block";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "inline-block";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
 				break;
@@ -64,6 +70,10 @@ function sortGenre(reset) {
 					horror[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < shooters.length; i++)
 					shooters[i].style.display = "inline-block";
 				break;
@@ -86,6 +96,10 @@ function sortGenre(reset) {
 					shooters[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < kids.length; i++)
 					kids[i].style.display = "inline-block";
 				break;
@@ -108,6 +122,10 @@ function sortGenre(reset) {
 					kids[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < experiences.length; i++)
 					experiences[i].style.display = "inline-block";
 				break;
@@ -130,6 +148,10 @@ function sortGenre(reset) {
 					experiences[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < puzzles.length; i++)
 					puzzles[i].style.display = "inline-block";
 				break;
@@ -152,6 +174,10 @@ function sortGenre(reset) {
 					puzzles[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < rhythm.length; i++)
 					rhythm[i].style.display = "inline-block";
 				break;
@@ -174,6 +200,10 @@ function sortGenre(reset) {
 					rhythm[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < action.length; i++)
 					action[i].style.display = "inline-block";
 				break;
@@ -196,11 +226,68 @@ function sortGenre(reset) {
 					action[i].style.display = "none";
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
 				for(i = 0; i < sports.length; i++)
 					sports[i].style.display = "inline-block";
 				break;
 			case 8: // horror
 				button.innerHTML = "Horror";
+				buttonClicks++;
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "inline-block";
+				break;
+			case 9: // fiveplus
+				button.innerHTML = "5+ Players";
+				buttonClicks++;
+				for(i = 0; i < shooters.length; i++)
+					shooters[i].style.display = "none";
+				for(i = 0; i < kids.length; i++)
+					kids[i].style.display = "none";
+				for(i = 0; i < experiences.length; i++)
+					experiences[i].style.display = "none";
+				for(i = 0; i < puzzles.length; i++)
+					puzzles[i].style.display = "none";
+				for(i = 0; i < rhythm.length; i++)
+					rhythm[i].style.display = "none";
+				for(i = 0; i < action.length; i++)
+					action[i].style.display = "none";
+				for(i = 0; i < sports.length; i++)
+					sports[i].style.display = "none";
+				for(i = 0; i < rooms.length; i++)
+					rooms[i].style.display = "none";
+				for(i = 0; i < horror.length; i++)
+					horror[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "inline-block";
+				break;
+			case 10:
+				case 9: // two
+				button.innerHTML = "2 Players";
 				buttonClicks = 0;
 				for(i = 0; i < shooters.length; i++)
 					shooters[i].style.display = "none";
@@ -219,7 +306,11 @@ function sortGenre(reset) {
 				for(i = 0; i < rooms.length; i++)
 					rooms[i].style.display = "none";
 				for(i = 0; i < horror.length; i++)
-					horror[i].style.display = "inline-block";
+					horror[i].style.display = "none";
+				for(i = 0; i < fiveplus.length; i++)
+					fiveplus[i].style.display = "none";
+				for(i = 0; i < two.length; i++)
+					two[i].style.display = "inline-block";
 				break;
 		}
 	}
@@ -242,6 +333,10 @@ function sortGenre(reset) {
 			sports[i].style.display = "inline-block";
 		for(i = 0; i < horror.length; i++)
 			horror[i].style.display = "inline-block";
+		for(i = 0; i < fiveplus.length; i++)
+			fiveplus[i].style.display = "inline-block";
+		for(i = 0; i < two.length; i++)
+			two[i].style.display = "inline-block";
 		for(i = 0; i < rooms.length; i++)
 			rooms[i].style.display = "none";
 	}
@@ -627,19 +722,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'bugs':
-			game = document.getElementById('bugs');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'synth':
 			game = document.getElementById('synth');
 			if(module_toggle == false) {
@@ -733,19 +815,6 @@ function toggleModule(tag) {
 			break;
 		case 'epic':
 			game = document.getElementById('epic');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'fall':
-			game = document.getElementById('fall');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
@@ -913,19 +982,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'trip':
-			game = document.getElementById('trip');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'nef':
 			game = document.getElementById('nef');
 			if(module_toggle == false) {
@@ -965,19 +1021,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'cave':
-			game = document.getElementById('cave');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'fear':
 			game = document.getElementById('fear');
 			if(module_toggle == false) {
@@ -993,19 +1036,6 @@ function toggleModule(tag) {
 			break;
 		case 'zero':
 			game = document.getElementById('zero');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'magic':
-			game = document.getElementById('magic');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
@@ -1199,19 +1229,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'fruit2':
-			game = document.getElementById('fruit2');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'warcade':
 			game = document.getElementById('warcade');
 			if(module_toggle == false) {
@@ -1227,19 +1244,6 @@ function toggleModule(tag) {
 			break;
 		case 'solar':
 			game = document.getElementById('solar');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'golf':
-			game = document.getElementById('golf');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
@@ -1578,6 +1582,97 @@ function toggleModule(tag) {
 			break;
 		case 'callblood':
 			game = document.getElementById('callblood');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'minigolf':
+			game = document.getElementById('minigolf');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'lightblade':
+			game = document.getElementById('lightblade');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'plush':
+			game = document.getElementById('plush');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'starwar2':
+			game = document.getElementById('starwar2');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'bblocks':
+			game = document.getElementById('bblocks');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'bows':
+			game = document.getElementById('bows');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'headgun':
+			game = document.getElementById('headgun');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
