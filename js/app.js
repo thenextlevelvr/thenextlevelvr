@@ -904,19 +904,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'evasion':
-			game = document.getElementById('evasion');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'rock':
 			game = document.getElementById('rock');
 			if(module_toggle == false) {
@@ -1645,34 +1632,21 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'bblocks':
-			game = document.getElementById('bblocks');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
-		case 'bows':
-			game = document.getElementById('bows');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'headgun':
 			game = document.getElementById('headgun');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'fortress2':
+			game = document.getElementById('fortress2');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
