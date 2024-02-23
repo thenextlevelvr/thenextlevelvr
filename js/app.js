@@ -1294,19 +1294,6 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'lab':
-			game = document.getElementById('lab');
-			if(module_toggle == false) {
-				module_toggle = true;
-				game.style.display = 'flex';
-				break;
-			}
-			else if(module_toggle == true) {
-				module_toggle = false;
-				game.style.display = 'none';
-				break;
-			}
-			break;
 		case 'training':
 			game = document.getElementById('training');
 			if(module_toggle == false) {
