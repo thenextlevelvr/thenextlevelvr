@@ -14,7 +14,7 @@
 		<button class="button" onclick="showPlayers(2); sortGenre(reset);">Reset</button>
 		<div class="dropcontainer">
 			<button id="dropbutton" onclick="sortGenre();">Sort By Genre Instead</button>
-			<button id="roombutton" onclick="sortEscape(); sortGenre(reset);">Escape Rooms</button>
+			<button id="roombutton" onclick="sortGenre(reset); sortEscape();"> Escape Rooms</button>
 		</div>
 	</header>
 	<div class="container">
@@ -1104,7 +1104,7 @@
 		</div>
 		
 	</div>
-	<footer>Last Updated July 2023 - M</footer>
+	<footer>Last Updated March 2024 - M</footer>
 	<script>
 		if (typeof navigator.serviceWorker !== 'undefined') {
 			navigator.serviceWorker.register('sw.js') }
