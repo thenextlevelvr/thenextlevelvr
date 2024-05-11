@@ -426,6 +426,19 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
+		case 'arizona2':
+			game = document.getElementById('arizona2');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
 		case 'jobsim':
 			game = document.getElementById('jobsim');
 			if(module_toggle == false) {
@@ -1557,8 +1570,60 @@ function toggleModule(tag) {
 				break;
 			}
 			break;
-		case 'fortress2':
-			game = document.getElementById('fortress2');
+		case 'fall':
+			game = document.getElementById('fall');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'smash':
+			game = document.getElementById('smash');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'smashp':
+		game = document.getElementById('smashp');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'lofi':
+			game = document.getElementById('lofi');
+			if(module_toggle == false) {
+				module_toggle = true;
+				game.style.display = 'flex';
+				break;
+			}
+			else if(module_toggle == true) {
+				module_toggle = false;
+				game.style.display = 'none';
+				break;
+			}
+			break;
+		case 'popq':
+			game = document.getElementById('popq');
 			if(module_toggle == false) {
 				module_toggle = true;
 				game.style.display = 'flex';
@@ -1571,7 +1636,7 @@ function toggleModule(tag) {
 			}
 			break;
 		case '':
-			alert("uh oh bestie something went wrong");
+			alert("tell marti what you clicked on");
 			break;
 	}
 }
