@@ -137,24 +137,16 @@ footer {
 		align-items: center;
 		height: 100%;
 	}
-			
-
-.slide {
-	width: 48%;
-	height: 50%;
-	margin: 10px;
-	margin-top: 50px;
+.slide-caption {
+	text-align: left;
+	background: rgba(0,0,0, 0.75);
+	padding: 10px;
+	color: #fff;
+	font-family: "Fjalla One";
+	font-size: 170%;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	margin-top: -30px;
 }
-	.slide-caption {
-		text-align: left;
-		background: rgba(0,0,0, 0.75);
-		padding: 10px;
-		color: #fff;
-		font-family: "Fjalla One";
-		font-size: 170%;
-		text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-		margin-top: -30px;
-	}
 	
 .close {
 	color: transparent;
