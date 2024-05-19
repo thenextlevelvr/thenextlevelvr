@@ -855,38 +855,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="game single experience" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1094390/capsule_616x353.jpg?t=1671739942');" onclick="toggleModule('wizard');">
+		<div class="game single experience" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1094390/capsule_616x353.jpg?t=1671739942');" onclick="toggleModule('wizard', 'waltzv');">
 			<!-- <p style="font-size: 24px">Waltz of the Wizard</p> -->
 			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
 			<div class="module" id="wizard">
 				<span class="close cursor" onclick="toggleModule('wizard');">&times;</span>
 				<div class="module-content">
-					<video controls muted controlsList="nofullscreen" width="1349" height="480" src="./assets/videos/waltz.mp4" type="video/mp4" loop="true"></video>
+					<video controls muted controlsList="nofullscreen" width="1349" height="480" src="./assets/videos/waltz.mp4" type="video/mp4" loop="true" id="waltzv"></video>
 					<div class="slide-caption">Play as a wizard and explore your tower, playing games and finding spells to manipulate the world around you. Find magical artifacts, talk to your buddy the skull, and put your spells to good use in this magical sandbox experience!</div>
 				</div>
 			</div>
 		</div>
 <!-- escape rooms -->
-		<div class="game rooms" style="background-image: url('./assets/images/thumb_hof.jpg'); background-position: bottom center;" onclick="toggleModule('fear1');">
-			<!-- <p style="font-size: 24px">House of Fear</p> -->
-			<p style="font-size: 18px; margin-top: 3px;">1-4 Players</p>
-			<div class="module" id="fear1">
-				<span class="close cursor" onclick="toggleModule('fear1');">&times;</span>
-				<div class="module-content">
-					<div class="slide" style="background: url('./assets/images/preview_hof01.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
-					<div class="slide" style="background: url('./assets/images/preview_hof02.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
-					<div class="slide-caption">Night. An abandoned cabin in the woods. Cobwebs in the corners, dust on the floor...and not a single living soul. From the looks of it the house has long since been abandoned, but is that really the case?</div>
-				</div>
-			</div>
-		</div>
-		<div class="game rooms" style="background-image: url('./assets/images/thumb_hofcs.jpg'); background-position: bottom center;" onclick="toggleModule('fear2');">
+		<div class="game rooms" style="background-image: url('./assets/images/thumb_hofcs.jpg'); background-position: bottom center;" onclick="toggleModule('fear2', 'fearv');">
 			<!-- <p style="font-size: 24px">House of Fear: Cursed Souls</p> -->
 			<p style="font-size: 18px; margin-top: 3px;">1-4 Players</p>
 			<div class="module" id="fear2">
 				<span class="close cursor" onclick="toggleModule('fear2');">&times;</span>
 				<div class="module-content">
-					<div class="slide" style="background: url('./assets/images/preview_cs01.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
-					<div class="slide" style="background: url('./assets/images/preview_cs02.jpg'); background-size: auto 100%; background-repeat: no-repeat;"></div>
+					<video controls muted controlsList="nofullscreen" width="1349" height="480" src="./assets/videos/hofcurse.mp4" type="video/mp4" loop="true" id="fearv"></video>
 					<div class="slide-caption">The dead need the living: they need you. A mysterious and brutal murder in a small town shocked the locals: rumor has it that one night occultists killed an entire family and cursed their souls, imprisoning them in the walls forever. Can you solve this the mystery of their deaths and free them from their fate?</div>
 				</div>
 			</div>
