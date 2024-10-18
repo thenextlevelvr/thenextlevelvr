@@ -251,6 +251,17 @@
 				</div>
 			</div>
 		</div>
+		<div class="game multi puzzle fiveplus" style="background-image: url('https://enversed.com/wp-content/uploads/2024/07/Enversed-VR-Escape-Room-Atlantis-600x400.jpg');" onclick="toggleModule('atlantis', 'atv');">
+			<!-- <p style="font-size: 24px">Atlantis</p> -->
+			<p style="font-size: 18px; margin-top: 10px;">1-8 Players</p>
+			<div class="module" id="atlantis">
+				<span class="close cursor" onclick="toggleModule('atlantis');">&times;</span>
+				<div class="module-content">
+					<video controls muted controlsList="nofullscreen" width="1349" height="480" src="./assets/videos/atv.mp4" type="video/mp4" loop="true" id="atv"></video>
+					<div class="slide-caption">Embark on a thrilling adventure in a lost city with up to 7 friends! Solve challenging puzzles and engage in exciting combat with ancient enemies. Discover hidden mysteries and confront challenges reserved for the bravest explorers. Your unforgettable journey through the lost city starts now!</div>
+				</div>
+			</div>
+		</div>
 		<div class="game single shooter" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/418650/capsule_616x353.jpg?t=1667031863');" onclick="toggleModule('pirate', 'piratev');">
 			<!-- <p style="font-size: 24px">Space Pirate Trainer</p> -->
 			<!-- <p style="font-size: 18px; margin-top: 3px;">MEDIUM</p> -->
@@ -534,6 +545,17 @@
 				<div class="module-content">
 					<video controls muted controlsList="nofullscreen" width="1349" height="480" src="./assets/videos/top.mp4" type="video/mp4" loop="true" id="topv"></video>
 					<div class="slide-caption">A climbing/parkour experience where you fight to the top of increasingly difficult obstacle courses, throwing yourself across massive gaps, latching on to spinning obstacles, and hanging on for dear life on dizzying ledges. Perfect for the VR thrill seeker.</div>
+				</div>
+			</div>
+		</div>
+		<div class="game multi shooter" style="background-image: url('https://v-room.sg/wp-content/uploads/2024/07/001pixelhack.jpg');" onclick="toggleModule('pixel', 'pixv');">
+			<!-- <p style="font-size: 24px">Pixel Hack</p> -->
+			<p style="font-size: 18px; margin-top: 3px;">1-4 Players</p>
+			<div class="module" id="pixel">
+				<span class="close cursor" onclick="toggleModule('pixel');">&times;</span>
+				<div class="module-content">
+					<video controls muted controlsList="nofullscreen" width="1349" height="480" src="./assets/videos/pixv.mp4" type="video/mp4" loop="true" id="pixv"></video>
+					<div class="slide-caption">A multiplayer online cooperative shooting game that combines elements of shooting, roguelike, cooperation, bullet hell, dodging, and music. Set in a world that blends reality with fiction, the game uses pixelated art style to give players a nostalgic feeling of playing arcade games from their childhood!</div>
 				</div>
 			</div>
 		</div>
@@ -1028,7 +1050,7 @@
 		</div>
 		
 	</div>
-	<footer>Last Updated March 2024 - M</footer>
+	<footer>Last Updated October 2024 - M</footer>
 	<script>
 		if (typeof navigator.serviceWorker !== 'undefined') {
 			navigator.serviceWorker.register('sw.js') }
